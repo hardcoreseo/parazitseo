@@ -578,39 +578,7 @@ section {
     color: #00cc6a;
 }
 
-.form {
-    background: #2a2a2a;
-    padding: 40px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
 
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px;
-    background: #1a1a1a;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    color: #fff;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #00ff88;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: #666;
-}
 
 /* FAQ Section */
 .faq {
@@ -889,4 +857,48 @@ section {
     opacity: 1;
     transform: translateX(0);
 }
+
+
+
+.telegram-contact-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.telegram-contact-button p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.telegram-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0088cc, #00aaff);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
+    transition: all 0.3s ease;
+}
+
+.telegram-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 136, 204, 0.6);
+}
+
+.telegram-btn i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    .telegram-contact-button {
+        margin-top: 20px;
+    }
+}
+
 
