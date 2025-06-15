@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initFAQ();
     initSmoothScrolling();
     initMobileMenu();
-    initFormHandling();
     initNavbarScroll();
 });
 
@@ -149,39 +148,7 @@ function initMobileMenu() {
                 navToggle.classList.remove('active');
             });
         });
-    }
-}
-
-// Form Handling
-function initFormHandling() {
-    const form = document.querySelector('.form');
-    
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(form);
-            const name = form.querySelector('input[type="text"]').value;
-            const email = form.querySelector('input[type="email"]').value;
-            const website = form.querySelector('input[type="url"]').value;
-            const message = form.querySelector('textarea').value;
-            
-            // Simple validation
-            if (!name || !email || !message) {
-                showNotification('Lütfen tüm gerekli alanları doldurun.', 'error');
-                return;
-            }
-            
-            // Simulate form submission
-            showNotification('Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.', 'success');
-            form.reset();
-        });
-    }
-}
-
-// Navbar Scroll Effect
-function initNavbarScroll() {
+    // Navbar Scroll Effectfunction initNavbarScroll() {
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', () => {
